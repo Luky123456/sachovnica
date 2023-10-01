@@ -29,8 +29,8 @@ def drticka(dama: int):
         pocitadlo += 1
         h = 400
         w = 400
-        img = Image.new("RGB", (h, w), (0, 0, 0))  # create a new 15x15 image
-        pixels = img.load()  # create the pixel map
+        img = Image.new("RGB", (h, w), (0, 0, 0))  
+        pixels = img.load()  
         stvorec = img.size[0] // 8
         newimg = ImageDraw.Draw(img)
         for i in range(0,img.size[0],stvorec):
